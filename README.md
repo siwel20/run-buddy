@@ -12,3 +12,5 @@ https://lernantino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Paul Throckmorton
+
+# Run Buddy Inc. 
