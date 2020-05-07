@@ -360,18 +360,38 @@ section {
 
 /* service plan section added */
 .service-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(4, minmax(25px, auto));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap:  10px;
 }
 
 .service-grid-item {
-    width: 200px;
-    height: 50px;
     background-color: orange;
     border: solid;
+    padding: 1em;
     color: black; 
 }
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2 {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+}
+
+.box3 {
+    grid-column: 2/ span 2;
+    grid-row: 3/ span1;
+}
+
 
 /*Media Query for Smaller Desktop Screens and Smaller*/
 /* Media Query go after all the other sytles in the sytle sheet */
