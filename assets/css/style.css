@@ -358,6 +358,19 @@ section {
     display: flex;
 }
 
+/* service plan section added */
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black; 
+}
+
 /*Media Query for Smaller Desktop Screens and Smaller*/
 /* Media Query go after all the other sytles in the sytle sheet */
 @media screen and (max-width: 980px) {
