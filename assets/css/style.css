@@ -407,11 +407,6 @@ section {
     transform: rotate(180deg);
 }
 
-.grid-head, .grid-price, .service-grid-item.cancel {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 
 /*Media Query for Smaller Desktop Screens and Smaller*/
 /* Media Query go after all the other sytles in the sytle sheet */
@@ -488,6 +483,25 @@ section {
 
     .step-text {
         flex: 100%;
+    }
+
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+
+    .service-grid-item.both {
+        grid-column: 1 / -1;
+    }
+
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 /-1;
+        grid-row: -1;
     }
 }
 
